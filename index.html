@@ -33,14 +33,14 @@
 
 <script>
 async function carica() {
-  const response = await fetch("https://hook.eu1.make.com/6vzm885p1frjdr8k388t0tsoxiy8bhy0");
+  const response = await fetch("https://hook.eu1.make.com/2y0uuegjh4mg3zr2md7m2iw8nixy3y11");
   const data = await response.text();
   document.getElementById("ultimo").innerText = data;
 }
 
 async function invia() {
   const testo = document.getElementById("messaggio").value;
-  await fetch("https://hook.eu1.make.com/nhv9x198f4yscb3vqrwngfwe7nvg4xk9", {
+  await fetch("https://hook.eu1.make.com/6vzm885p1frjdr8k388t0tsoxiy8bhy0", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
