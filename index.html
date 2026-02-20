@@ -34,8 +34,8 @@
 <script>
 async function carica() {
   const response = await fetch("https://hook.eu1.make.com/6vzm885p1frjdr8k388t0tsoxiy8bhy0");
-  const data = await response.json();
-  document.getElementById("ultimo").innerText = data.plain_text;
+  const data = await response.text();
+  document.getElementById("ultimo").innerText = data;
 }
 
 async function invia() {
